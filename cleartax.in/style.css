@@ -1,0 +1,342 @@
+@font-face {
+    font-family: Mieding;
+    src: url(Mieding.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    font-family: "Mieding" sans-serif;
+    color: #314259;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 4vh 10vw;
+    background-color: #fff;
+    position: fixed;
+    z-index: 999;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+height: 5vh;
+}
+.nav-part2 {
+    display: flex;
+    gap: 3vw;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 2vh;
+}
+
+.btn {
+    background-color: #1678FB;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.content {
+    padding: 0 12vw;
+    padding-top: 30vh;
+    padding-bottom: 10vh;
+}
+
+.main-text {
+    text-align: center;
+}
+
+.main-heading {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 62.2px;
+}
+
+.sub-heading {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #9092a3;
+    margin-top: 4vh;
+}
+
+.card {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50vh;
+    width: 20vw;
+    text-align: center;
+    /* background-color: #6f7be9; */
+}
+
+.card-image {
+    height: 20vm;
+    width: 25vh;
+}
+
+.cards h3 {
+    font-size: 29px;
+    font-weight: 600;
+    line-height: 38.4px;
+}
+
+.cards p {
+    color: #9092a3;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.cards .btn-card {
+    width: 18vw;
+    height: 10vh;
+}
+
+.vl {
+    margin-top: 13vh;
+    border-left: 0.4vw solid rgba(144, 146, 163, 0.2);
+    height: 25vh;
+  }
+
+  hr {
+    color: rgba(144, 146, 163, 0.2);
+    width: 65vw;
+    margin: 3vh 7vw;
+  }
+
+  .manue {
+    margin: 1vh 5vw;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  span {
+    color: #1678FB;
+  }
+  .manue p {
+    color: #9092a3;
+  }
+  .black-p {
+    color: #314259;
+  }
+
+  .items {
+    display: flex;
+    gap: 1vw;
+  }
+.items i {
+    font-size: 20px;
+    font-weight: 200;
+    color: #1678FB;
+}
+
+.content1 {
+    background-color: #FAFAFA;
+    height: 100%;
+    width: 100%;
+    padding: 10vh 12vw;
+}
+
+.content1 .main-heading {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 62.2px;
+}
+
+.company-cards{
+    padding: 10vh 0;
+    display: flex;
+    gap: 2vw;
+}
+
+:root {
+    --card-height: 35vh;
+    --card-width: 17vw;
+    --card-padding-v: 1vh;
+    --card-padding-h: 1vw;
+    --card-bg-color: #ffffff;
+    --card-border-radius: 20px;
+    --card-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .3);
+    --card-hover-height: 35.5vh;
+    --card-hover-width: 17.5vw;
+    --card-hover-box-shadow: 0 6px 12px 0 rgba(0, 0, 0, .2);
+    --card-active-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .4);
+}
+
+.company-cards .cards {
+    height: var(--card-height);
+    width: var(--card-width);
+    padding: var(--card-padding-v) var(--card-padding-h);
+    background-color: var(--card-bg-color);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--card-box-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, height 0.3s ease, width 0.3s ease;
+}
+
+.company-cards .cards:hover  {
+    transform: translateY(-5px);
+    height: var(--card-hover-height);
+    width: var(--card-hover-width);
+    box-shadow: var(--card-hover-box-shadow);
+    cursor: pointer;
+}
+
+.company-cards .cards:active {
+    transform: translateY(-1px);
+    box-shadow: var(--card-active-box-shadow);
+}
+
+
+.img img {
+    height: 11vh;
+}
+
+.company-cards .img {
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+}
+
+.img h3,
+.t-heading {
+    padding-top: 2vh;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.t-heading {
+    text-align: center;
+    font-weight: 500;
+}
+
+.company-cards h5,
+.company-cards i {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.companies {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.companies img {
+    width: 7vw;
+    height: 5vh;
+}
+
+.companies img:hover {
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Content Section 2 */
+
+.content2 {
+    height: 100%;
+    width: 100%;
+    padding: 10vh 12vw;
+    display: flex;
+    justify-content: space-between;
+
+    /* align-items: center; */
+}
+.text {
+    text-align: left;
+}
+
+.left-section {
+    padding: 30vh 0;
+    padding-right: 6vw;
+    width: 50%;
+}
+
+.left-section h3 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 67.2px;
+    color: #314259;
+}
+
+.left-section p,
+.box p {
+    color: #9092a3;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.right-section {
+    width: 50%;
+    display: flex;
+    gap: 1vw;
+}
+
+.section1,
+.section2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.box {
+    padding: 20px;
+    position: relative;
+    width: 20vw; /* Adjusted for better visibility */
+    height: 30vh; /* Keeping the aspect ratio consistent */
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .4);
+    border-radius: 10%; /* Added rounded corners for a smoother look */
+}
+
+.box h3 {
+    color: #314259;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41.6px;
+}
+
+.box img {
+    position: absolute;
+    right: 1vw;
+    bottom: 0;
+    max-width: 100%; /* Ensures the image does not overflow the box */
+    max-height: 100%; 
+}
+

@@ -1,0 +1,119 @@
+:root {
+    --primary-color: black;
+    --secondary-color: rgb(87, 83, 83);
+    --background-color: blue;
+    --white-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--white-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#btn-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#btn-toggle i {
+    font-size: 24px;
+    color: var(--white-color);
+    /* display: none; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background-color: var(--background-color);
+    color: var(--white-color);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* image */
+.my-img {
+    margin: 10px;
+    width: 20%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.profile {
+    width: 100%;
+}
+
+.container {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .show-links {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    button#btn-toggle i {
+        display: block;
+    }
+
+    .my-img {
+        width: 90%;
+    }
+    .section {
+        flex-direction: column;
+    }
+}
+
+
+

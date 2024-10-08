@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS MCQ Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CSS MCQ Quiz</h1>
+
+        <div id="username-section">
+            <label for="username">Enter your name to start the quiz:</label><br>
+            <input type="text" id="username" name="username" required>
+            <button onclick="startQuiz()">Start Quiz</button>
+        </div>
+
+        <div id="quiz-section" style="display: none;">
+            <div class="question" data-question="q1">
+                <p><strong>1. What does CSS stand for?</strong></p>
+                <label><input type="radio" name="q1" value="A"> A) Computer Style Sheets</label><br>
+                <label><input type="radio" name="q1" value="B"> B) Cascading Style Sheets</label><br>
+                <label><input type="radio" name="q1" value="C"> C) Creative Style Sheets</label><br>
+                <label><input type="radio" name="q1" value="D"> D) Colorful Style Sheets</label>
+            </div>
+
+            <div class="question" data-question="q2">
+                <p><strong>2. Which HTML tag is used to define an internal style sheet?</strong></p>
+                <label><input type="radio" name="q2" value="A"> A) &lt;style&gt;</label><br>
+                <label><input type="radio" name="q2" value="B"> B) &lt;css&gt;</label><br>
+                <label><input type="radio" name="q2" value="C"> C) &lt;script&gt;</label><br>
+                <label><input type="radio" name="q2" value="D"> D) &lt;link&gt;</label>
+            </div>
+
+            <div class="question" data-question="q3">
+                <p><strong>3. Which property is used to change the background color in CSS?</strong></p>
+                <label><input type="radio" name="q3" value="A"> A) bgcolor</label><br>
+                <label><input type="radio" name="q3" value="B"> B) color</label><br>
+                <label><input type="radio" name="q3" value="C"> C) background-color</label><br>
+                <label><input type="radio" name="q3" value="D"> D) background</label>
+            </div>
+
+            <div class="question" data-question="q4">
+                <p><strong>4. How do you select an element with the id "header" in CSS?</strong></p>
+                <label><input type="radio" name="q4" value="A"> A) .header</label><br>
+                <label><input type="radio" name="q4" value="B"> B) #header</label><br>
+                <label><input type="radio" name="q4" value="C"> C) header</label><br>
+                <label><input type="radio" name="q4" value="D"> D) *header</label>
+            </div>
+
+            <div class="question" data-question="q5">
+                <p><strong>5. Which of the following is the correct CSS syntax to make all the &lt;p&gt; elements bold?</strong></p>
+                <label><input type="radio" name="q5" value="A"> A) p {font-weight:bold;}</label><br>
+                <label><input type="radio" name="q5" value="B"> B) p {text:bold;}</label><br>
+                <label><input type="radio" name="q5" value="C"> &lt;p style="font-weight:bold;"&gt;</label><br>
+                <label><input type="radio" name="q5" value="D"> &lt;p style="text:bold;"&gt;</label>
+            </div>
+
+            <button onclick="checkAnswers(); storeInfo();">Submit</button>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script type="text/javascript">  
+        function printvalue(){  
+        var name=document.form1.name.value;  
+        alert("Welcome: "+name);  
+        }  
+        </script>  
+          
+        <form name="form1">  
+        Enter Name:<input type="text" name="name"/>  
+        <input type="button" onclick="printvalue()" value="print name"/>  
+        </form>
+        <script type="text/javascript">  
+            function matchpass(){  
+            var firstpassword=document.f1.password.value;  
+            var secondpassword=document.f1.password2.value;  
+              
+            if(firstpassword==secondpassword){  
+            return true;  
+            }  
+            else{  
+            alert("password must be same!");  
+            return false;  
+            }  
+            }  
+            </script>  
+              
+            <form name="f1" action="register.jsp" onsubmit="return matchpass()">  
+            Password:<input type="password" name="password" /><br/>  
+            Re-enter Password:<input type="password" name="password2"/><br/>  
+            <input type="submit">  
+            </form>    
+    <script src="script.js"></script>
+</body>
+</html>

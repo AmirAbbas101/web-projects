@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+
+    <!-- Remix Icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">Logo</h1>
+                <button id="btn-toggle"><i class="ri-menu-line"></i></button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">Projects</a></li>
+                <li><a href="#" class="nav-link">Contact</a></li>
+                <li><a href="#" class="nav-link">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="section">
+    </div>
+
+    <script>
+        const btn_toggle = document.querySelector('#btn-toggle');
+        const menue = document.querySelector('.nav-links');
+        const section = document.querySelector('.section');
+
+        const  myArr = [1,2,3,4,5,5];
+
+        for(let i of myArr){
+            console.log(i);
+        }
+
+        for(let i = 0; i < 12; i++) {
+            section.innerHTML += `<div class="my-img">
+            <img class="profile" src="img.jpg" alt="Amir Abbas">
+            <div class="container">
+                <p>Amir Abbas</p>
+            </div>
+        </div>`;
+        }
+
+        btn_toggle.addEventListener('click', function () {
+            menue.classList.contains('show-links') ? menue.classList.remove('show-links') : menue.classList.add('show-links');
+            console.log(menue.classList)
+
+        })
+    </script>
+</body>
+
+</html>

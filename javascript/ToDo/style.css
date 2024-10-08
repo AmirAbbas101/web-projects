@@ -1,0 +1,80 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input and button styles */
+input[type="text"], input[type="date"] {
+    width: 20%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.add {
+    background-color: #28a745;
+    color: white;
+}
+
+button.add:hover {
+    background-color: #218838;
+}
+
+/* ToDo item container styles 
+.display-items {
+    width: 47%;
+    margin-top: 20px;
+    margin: 0 auto; 
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+*/
+.display-items div {
+    width: 47%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto; 
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+}
+
+.display-items span {
+    flex: 1;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Delete button styles */
+button.btn-delete {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+}
+
+button.btn-delete:hover {
+    background-color: #c82333;
+}

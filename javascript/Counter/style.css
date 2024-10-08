@@ -1,0 +1,103 @@
+/* style.css */
+
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styling */
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styling */
+.counter {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.count {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Button section styling */
+.button-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Button styling */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #003d7a;
+}
+
+button.increament {
+    background-color: #28a745;
+}
+
+button.increament:hover {
+    background-color: #218838;
+}
+
+button.increament:active {
+    background-color: #1e7e34;
+}
+
+button.decreament {
+    background-color: #dc3545;
+}
+
+button.decreament:hover {
+    background-color: #c82333;
+}
+
+button.decreament:active {
+    background-color: #bd2130;
+}
+
+button.reset {
+    background-color: #ffc107;
+    color: #000;
+}
+
+button.reset:hover {
+    background-color: #e0a800;
+}
+
+button.reset:active {
+    background-color: #d39e00;
+}

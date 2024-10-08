@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown-container button {
+            padding: 5px 18px;
+            background-color: transparent;
+            border: 1px solid #578331;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: .4s ease;
+        }
+
+        .dropdown-container button:hover {
+            background-color: #578331;
+            color: #fff;
+        }
+
+        .products-container {
+            display: none;
+            position: absolute;
+            background-color: #8f1b1b;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-container:hover .products-container {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown-container">
+        <button>Products</button>
+        <div class="products-container"></div>
+    </div>
+</body>
+</html>
