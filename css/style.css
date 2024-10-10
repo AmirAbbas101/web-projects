@@ -1,92 +1,92 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    width: 100%;
-    height: 100%;
-    font-family: sans-serif;
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
 }
 
 .container {
-    display: flex;
+  display: flex;
 }
 
 .wrapper {
-    width: 300px;
-    height: 450px;
-    box-shadow: 2px 3px 10px  3px gray;
-    margin: 50px auto;
-    padding: 5px;
-    border-radius: 15px;
-    overflow: hidden;
-    position: relative;
+  width: 300px;
+  height: 450px;
+  box-shadow: 2px 3px 10px 3px gray;
+  margin: 50px auto;
+  padding: 5px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
 }
 
 .image {
-    width: 100%;
-    height: 200px;
-    border-radius: 20px;
-    overflow: hidden;
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .twobuttons {
-    margin: 10px 0;
-    text-align: left;
+  margin: 10px 0;
+  text-align: left;
 }
 
 .buttons {
-    margin: 5px;
-    padding: 10px 20px;
-    border-radius: 20px;
-    color: rgb(75, 74, 74);
-    background-color: white;
-    border: 0.5px solid grey;
-    cursor: pointer;
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: rgb(75, 74, 74);
+  background-color: white;
+  border: 0.5px solid grey;
+  cursor: pointer;
 }
 .buttons:hover {
-    background-color: rgb(204, 250, 250);
-    color: blue;
-    border: none;
+  background-color: rgb(204, 250, 250);
+  color: blue;
+  border: none;
 }
 .content {
-    text-align: left;
+  text-align: left;
 }
 
 .content h1 {
-    margin: 15px 0;
-    padding: 0 10px;
-    font-size: 24px;
+  margin: 15px 0;
+  padding: 0 10px;
+  font-size: 24px;
 }
 
 .content p {
-    margin: 10px 0;
-    padding: 0 10px;
-    font-size: 14px;
+  margin: 10px 0;
+  padding: 0 10px;
+  font-size: 14px;
 }
 
 .content button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    background-color: rgb(204, 250, 250);
-    color: blue;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(204, 250, 250);
+  color: blue;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
 
 .content button:hover {
-    color: rgb(75, 74, 74);
-    background-color: white;
-    border: 0.5px solid grey;
+  color: rgb(75, 74, 74);
+  background-color: white;
+  border: 0.5px solid grey;
 }

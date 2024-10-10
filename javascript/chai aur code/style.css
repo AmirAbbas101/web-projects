@@ -1,0 +1,65 @@
+:root {
+    --red: rgb(203, 17, 45);
+    --blue: rgb(10, 102, 194);
+    --light-blue: rgb(55, 143, 233);
+    --light-green: rgb(237, 243, 248);
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.padding-p1 {
+    padding: 20px 80px;
+}
+
+body {
+    background-color: var(--color-b4);
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(55, 149, 189, 0.1);
+}
+
+header .logo {
+    color: var(--color-b2);
+}
+nav {
+    display: flex;
+    justify-content: space-between;    align-items: center;
+}
+
+nav h4 {
+    margin-left: 60px;
+    color: var(--color-b2);
+    padding-bottom: 10px;
+    border-bottom: 4px solid var(--color-b4);
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+nav h4:hover {
+    color: var(--color-b1);
+    border-color: var(--color-b1);
+}
+
+.btn {
+    margin: 20px;
+    background-color: var(--color-b2);
+    color: var(--color-b4);
+    padding: 8px 20px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+.btn:hover {
+    background-color: var(--color-b1);
+}
